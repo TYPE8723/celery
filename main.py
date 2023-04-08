@@ -5,9 +5,9 @@ CELERY_BROKER_URL_REDIS = 'redis://127.0.0.1:6379/4'
 CELERY_TASKS = ['tasks']
 
 # **SETUP NOTES**
-# set a redis backend,broker db to keep lop of each ex redis://127.0.0.1:6379/3
+# set a redis backend,broker db to keep log of each api . ex-> redis://127.0.0.1:6379/3
 #
-# add tasks in  celery_app.autodiscover_tasks() to register celery tasks
+# add tasks in CELERY_TASKS with the location of files where tasks are defined OR celery_app.autodiscover_tasks() to register celery tasks
 # for normal celery consumer exceution -> celery --app=apps.devbudcore.utils.celery:celery_app worker -l info
 # for development consumer execution -> celery --app=apps.devbudcore.utils.celery:celery_app worker -l debug
 celery_app = Celery(

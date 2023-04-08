@@ -1,5 +1,6 @@
 from main import celery_app
 
+# the celery task can be called in similar way with parameters passed after the fucntion name
 email_task = celery_app.send_task(
     'tasks.test_task',
         args=[10]
