@@ -17,7 +17,7 @@ To get started,  setup a redis cache,celery package for Python,
 ## Notes ⚠️
 * There are some compatability issues in runing celery in windows.
 
-## General Working of redis
+## General Working of celery
 Celery works based on a distributed architecture that allows for the execution of tasks asynchronously. It consists of three main components: the client, the broker, and the workers.
 
 The client is responsible for initiating tasks and sending them to the message broker. The tasks can be initiated using the Celery API, which allows you to define tasks as Python functions or methods.
