@@ -14,7 +14,7 @@ celery_app = Celery(
     __name__,
     backend=CELERY_BACKEND_REDIS,
     BROKER_URL=CELERY_BROKER_URL_REDIS,
-    include=CELERY_TASKS,
+    include=CELERY_TASKS,#once the tasks are added and the celery task begins execution,all the tasks mentioned in CELERY_TASKS get initialized
 )
 
 
